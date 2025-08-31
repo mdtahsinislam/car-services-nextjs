@@ -549,8 +549,8 @@ export default async function ServicesSection() {
     <div className="container mx-auto px-4 py-16 text-base-content">
       <div className="text-center">
         <p className="text-accent font-bold">Service</p>
-        <h1 className="text-4xl font-bold mt-2 dark:text-black">Our Service Area</h1>
-        <p className="mt-4 max-w-2xl mx-auto dark:text-green-500">
+        <h1 className="text-4xl font-bold mt-2 text-black">Our Service Area</h1>
+        <p className="mt-4 max-w-2xl font-bold mx-auto text-green-500">
           The Majority Have Suffered Alteration In Some Form...
         </p>
       </div>

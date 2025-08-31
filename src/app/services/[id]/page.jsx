@@ -230,14 +230,23 @@ export default async function ServiceDetails({ params }) {
    
 <div className="flex flex-col items-center justify-center min-h-screen text-base-content bg-base-100">
       {/* Top banner */}
-      <div className="mx-auto">
+      <div className="w-full mx-auto">
+  <Image
+    src={serviceBanner}
+    alt="service-banner"
+    className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+    priority
+  />
+</div>
+
+      {/* <div className="mx-auto">
         <Image
           src={serviceBanner}
           alt="service-banner"
           className="mt-3 w-full  h-[400px] object-cover"
           priority
         />
-      </div>
+      </div> */}
 
       {/* Main container */}
       <div className="max-w-[1200px] w-full mx-auto py-12 px-4 lg:px-0">
