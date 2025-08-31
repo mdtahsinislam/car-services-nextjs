@@ -415,7 +415,7 @@ export default function ContactPage() {
 
     
  {/* Main Content */}
-      <div className="container dark:bg-black text-base-content mx-auto p-8 max-w-4xl flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12 my-12">
+      <div className="container bg-black text-base-content mx-auto p-8 max-w-4xl flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12 my-12">
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-4 text-white">Get In Touch</h1>
@@ -494,7 +494,7 @@ export default function ContactPage() {
                suppressHydrationWarning
               ></textarea>
             </label>
-            <div className="flex justify-start">
+            <div className="flex justify-start mt-3 mb-3 ml-3">
               <button type="submit" className="mt-2.5 rounded-lg btn btn-outline btn-accent px-8"  suppressHydrationWarning>
                 Send Message
               </button>
