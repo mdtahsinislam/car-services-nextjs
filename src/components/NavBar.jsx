@@ -1148,11 +1148,11 @@ export default function NavBar() {
       {/* Mobile/Tablet Dropdown */}
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-base-300 flex flex-col  py-4 gap-4 lg:hidden z-50 shadow-lg text-start ">
-          <Link href="/" className="hover:text-accent" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link href="/my-booking" className="hover:text-accent" onClick={() => setIsMenuOpen(false)}>My Booking</Link>
-          <Link href="/servicess" className="hover:text-accent" onClick={() => setIsMenuOpen(false)}>Services</Link>
-          <Link href="/blog" className="hover:text-accent" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-          <Link href="/contact" className="hover:text-accent" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          <Link href="/" className="hover:text-accent ml-3" onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link href="/my-booking" className="hover:text-accent ml-3" onClick={() => setIsMenuOpen(false)}>My Booking</Link>
+          <Link href="/servicess" className="hover:text-accent ml-3" onClick={() => setIsMenuOpen(false)}>Services</Link>
+          <Link href="/blog" className="hover:text-accent ml-3" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+          <Link href="/contact" className="hover:text-accent ml-3" onClick={() => setIsMenuOpen(false)}>Contact</Link>
 
           {/* User / Login */}
           {/* {currentUser ? (
@@ -1178,7 +1178,7 @@ export default function NavBar() {
             type="checkbox"
             onChange={toggleTheme}
             checked={theme === "dark"}
-            className="toggle theme-controller"
+            className="toggle theme-controller ml-3"
           />
         ) : (
           <div className="toggle theme-controller" style={{ width: "3rem", height: "1.5rem" }} />
@@ -1190,12 +1190,12 @@ export default function NavBar() {
               alt={currentUser.name}
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full ml-3"
               onError={(e) => (e.target.src = "/default-profile.png")}
             />
             <button
               onClick={handleLogout}
-              className="btn btn-outline btn-error btn-sm w-[100px]"
+              className="btn btn-outline btn-error btn-sm w-[100px] ml-3"
               suppressHydrationWarning
             >
               Logout
@@ -1203,13 +1203,13 @@ export default function NavBar() {
           </>
         ) : (
           <Link href="/login">
-            <button className="btn btn-outline btn-accent btn-sm" suppressHydrationWarning>
+            <button className="btn btn-outline btn-accent btn-sm ml-3" suppressHydrationWarning>
               Login
             </button>
           </Link>
         )}
 
-          <button className="btn btn-outline btn-accent btn-sm w-[100px]" suppressHydrationWarning>
+          <button className="btn btn-outline btn-accent btn-sm w-[100px] ml-3" suppressHydrationWarning>
             Appointment
           </button>
         </div>
